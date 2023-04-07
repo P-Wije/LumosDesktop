@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="190.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.DrawerContentController">
+   <children>
+      <JFXButton fx:id="adminDashButton" layoutX="10.0" layoutY="10.0" onAction="#loadAdminDashboard" prefHeight="58.0" prefWidth="189.0" style="-fx-background-color: white;" text="   Dashboard">
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="DASHBOARD" scaleX="2.0" scaleY="2.0" wrappingWidth="12.0" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="allBooksNavButton" onAction="#loadAllBooks" prefHeight="58.0" prefWidth="189.0" style="-fx-background-color: white;" text="   All Books">
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="BOOK" scaleX="2.0" scaleY="2.0" wrappingWidth="12.0" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="allWithdrawalsButton" alignment="CENTER" layoutX="10.0" layoutY="10.0" onAction="#loadAllWithdrawals" prefHeight="58.0" prefWidth="189.0" style="-fx-background-color: white;" text="   Withdrawals">
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="CALENDAR" scaleX="2.0" scaleY="2.0" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="lateFeesNavButton" alignment="CENTER" layoutX="10.0" layoutY="68.0" onAction="#loadLateFees" prefHeight="58.0" prefWidth="189.0" style="-fx-background-color: white;" text="   Late Fees">
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="DOLLAR" scaleX="2.0" scaleY="2.0" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="allMembersNavButton" layoutX="10.0" layoutY="127.0" onAction="#loadAllMembers" prefHeight="58.0" prefWidth="189.0" style="-fx-background-color: white;" text="   Members">
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" scaleX="2.0" scaleY="2.0" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="logoutFromAdminBtn" layoutX="10.0" layoutY="127.0" onAction="#logoutFromDashboard" prefHeight="58.0" prefWidth="189.0" style="-fx-background-color: white;" text="   Logout">
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="SIGN_OUT" scaleX="2.0" scaleY="2.0" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exitFromDashboardButton" layoutX="10.0" layoutY="185.0" onAction="#exitFromDashboardButton" prefHeight="58.0" prefWidth="189.0" style="-fx-background-color: white;" text="   Exit">
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="TIMES" scaleX="2.0" scaleY="2.0" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

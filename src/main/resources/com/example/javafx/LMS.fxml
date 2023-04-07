@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: #ECECE7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.LoginController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="brandingImageView" fitHeight="231.0" fitWidth="228.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../Images/logo-black.png" />
+                    </image></ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #BB84E8;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="29.0" layoutY="107.0" text="Username" />
+                <TextField fx:id="UsernameTextField" layoutX="89.0" layoutY="103.0" prefHeight="26.0" prefWidth="173.0" promptText="Username" />
+                <Label layoutX="29.0" layoutY="145.0" text="Password" />
+                <PasswordField fx:id="PasswordTextField" layoutX="89.0" layoutY="140.0" prefHeight="26.0" prefWidth="173.0" promptText="Password" />
+                <Button fx:id="LoginBtn" layoutX="21.0" layoutY="232.0" mnemonicParsing="false" onAction="#LoginBtnOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #35185A;" text="Login" textFill="WHITE" />
+                <Button fx:id="CancelBtn" layoutX="21.0" layoutY="354.0" mnemonicParsing="false" onAction="#CancelBtnOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #35185A;" text="Cancel" textFill="WHITE" />
+                <Label fx:id="errorMessageLabel" alignment="CENTER" layoutX="12.0" layoutY="200.0" prefHeight="18.0" prefWidth="268.0" textFill="#bc1111" />
+            <Button fx:id="RegisterBtn" layoutX="21.0" layoutY="314.0" mnemonicParsing="false" onAction="#RegisterBtnOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #35185A;" text="Register" textFill="WHITE" />
+            <FontAwesomeIconView glyphName="LOCK" layoutX="142.0" layoutY="51.0" scaleX="2.0" scaleY="2.0" />
+            <Button fx:id="LoginBtnAdmin" layoutX="21.0" layoutY="273.0" mnemonicParsing="false" onAction="#LoginAdminBtnOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #35185A;" text="Admin Login" textFill="WHITE" />
+            </children></AnchorPane>
+    </right>
+</BorderPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.SidebarController">
+   <AnchorPane prefHeight="46.0" prefWidth="780.0" style="-fx-background-color: #BB84E8;">
+      <children>
+         <JFXHamburger fx:id="hamburger" layoutX="14.0" layoutY="13.0" />
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="contentAnchor" layoutX="192.0" layoutY="46.0" prefHeight="464.0" prefWidth="588.0">
+      <children>
+         <TreeTableView layoutX="-156.0" layoutY="75.0" prefHeight="323.0" prefWidth="530.0">
+           <columns>
+             <TreeTableColumn prefWidth="75.0" text="Member ID" />
+             <TreeTableColumn prefWidth="133.5999755859375" text="First Name" />
+               <TreeTableColumn prefWidth="142.4000244140625" text="Last Name" />
+               <TreeTableColumn prefWidth="92.79998779296875" text="Username" />
+               <TreeTableColumn prefWidth="90.39990234375" text="Password" />
+           </columns>
+         </TreeTableView>
+         <TextField layoutX="405.0" layoutY="334.0" />
+         <Label layoutX="405.0" layoutY="86.0" text="Member ID">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <TextField layoutX="405.0" layoutY="105.0" />
+         <Label layoutX="405.0" layoutY="145.0" text="First Name">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <TextField layoutX="405.0" layoutY="164.0" />
+         <Label layoutX="405.0" layoutY="202.0" text="Last Name">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <TextField layoutX="405.0" layoutY="221.0" />
+         <Label layoutX="405.0" layoutY="261.0" text="Username">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <TextField layoutX="405.0" layoutY="280.0" />
+         <Label layoutX="403.0" layoutY="315.0" text="Password">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <Button layoutX="391.0" layoutY="396.0" mnemonicParsing="false" onAction="#onMemberAddAction" style="-fx-background-color: #35185A;" text="Add" textFill="WHITE" />
+         <Button layoutX="455.0" layoutY="396.0" mnemonicParsing="false" onAction="#onMemberEditAction" style="-fx-background-color: #35185A;" text="Edit" textFill="WHITE" />
+         <Button layoutX="512.0" layoutY="396.0" mnemonicParsing="false" onAction="#onMemberDeleteAction" style="-fx-background-color: #35185A;" text="Delete" textFill="WHITE" />
+         <Label layoutX="109.0" layoutY="24.0" prefHeight="35.0" prefWidth="137.0" text="Member List" textFill="#35185a">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+      </children></AnchorPane>
+    <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutY="46.0" prefHeight="464.0" prefWidth="189.0" />
+</AnchorPane>

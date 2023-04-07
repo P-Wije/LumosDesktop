@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.SidebarPieController">
+   <AnchorPane prefHeight="46.0" prefWidth="780.0" style="-fx-background-color: #BB84E8;">
+      <children>
+         <JFXHamburger fx:id="hamburger" layoutX="14.0" layoutY="13.0" />
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="contentAnchor" layoutX="190.0" layoutY="46.0" prefHeight="464.0" prefWidth="589.0">
+      <children>
+         <PieChart fx:id="pieChart" layoutX="-152.0" layoutY="65.0" prefHeight="376.0" prefWidth="500.0" />
+         <Label layoutX="149.0" layoutY="22.0" text="Admin Dashboard">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <FontAwesomeIconView glyphName="CALENDAR" layoutX="390.0" layoutY="103.0" scaleX="3.0" scaleY="3.0" />
+         <Label fx:id="time" layoutX="427.0" layoutY="85.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="dateLabel" layoutX="428.0" layoutY="90.0" text="Label" />
+         <FontAwesomeIconView glyphName="USER" layoutX="392.0" layoutY="229.0" scaleX="3.0" scaleY="3.0" />
+         <Label layoutX="427.0" layoutY="216.0" text="Users Active : 1" />
+         <FontAwesomeIconView glyphName="ADDRESS_BOOK" layoutX="391.0" layoutY="363.0" scaleX="3.0" scaleY="3.0" />
+         <Label layoutX="427.0" layoutY="350.0" text="Books Borrowed today : 20" />
+      </children></AnchorPane>
+    <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutY="46.0" prefHeight="464.0" prefWidth="189.0" />
+</AnchorPane>
